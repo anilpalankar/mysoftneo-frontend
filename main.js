@@ -1,5 +1,5 @@
 /**
- * MysoftNexus — main.js
+ * f — main.js
  * Lightweight vanilla JS: header scroll, mobile nav, intersection observer animations
  */
 
