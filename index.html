@@ -280,4 +280,332 @@
               <div class="auto-icon-wrap" aria-hidden="true">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2Z" stroke="#38bdf8" stroke-width="1.5"/><path d="M2 12h4M18 12h4M12 2v4M12 18v4" stroke="#38bdf8" stroke-width="1.5" stroke-linecap="round"/></svg>
               </div>
-              <span class="auto-statu
+              <span class="auto-status auto-status--live">Sync &lt;90s</span>
+            </div>
+            <h3 class="auto-card-title" id="auto-3">OTA Inventory Sync Engine</h3>
+            <p class="auto-card-body">A dedicated Azure-hosted channel manager micro-service maintains live two-way connectivity with Booking.com, Expedia, Agoda, MakeMyTrip, and direct booking engines. Every reservation, cancellation, or rate update propagates across all channels within 90 seconds — eliminating double-booking and rate parity violations.</p>
+            <div class="auto-card-metrics" aria-label="OTA sync metrics">
+              <div class="metric"><span class="metric-val">&lt;90s</span><span class="metric-label">Channel sync latency</span></div>
+              <div class="metric"><span class="metric-val">0</span><span class="metric-label">Double bookings</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROBLEM / SOLUTION MAP ========== -->
+    <section class="section problem-solution" id="platform-overview" aria-labelledby="ps-heading">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">B2B Problem &amp; Solution Map</div>
+          <h2 class="section-title" id="ps-heading">From Fragmented Legacy to a Unified Nexus</h2>
+          <p class="section-subtitle">Independent hotels and resorts operate on a patchwork of disconnected tools. Mysoft Neo collapses that complexity into a single, multi-tenant cloud hub.</p>
+        </div>
+
+        <div class="ps-layout">
+
+          <!-- Before Column -->
+          <div class="ps-column ps-column--before" aria-labelledby="before-heading">
+            <div class="ps-column-header">
+              <div class="ps-column-badge ps-column-badge--before">Legacy Reality</div>
+              <h3 class="ps-column-title" id="before-heading">The Fragmented Hotel Stack</h3>
+            </div>
+            <ul class="ps-list" role="list">
+              <li class="ps-item ps-item--problem">
+                <div class="ps-item-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="7" stroke="#f87171" stroke-width="1.3"/><path d="M6 6L12 12M12 6L6 12" stroke="#f87171" stroke-width="1.3" stroke-linecap="round"/></svg>
+                </div>
+                <div>
+                  <strong>Siloed Desktop Software</strong>
+                  <p>Separate, incompatible applications for PMS, POS, and payroll — each requiring local server hardware and manual data transfer via USB or email.</p>
+                </div>
+              </li>
+              <li class="ps-item ps-item--problem">
+                <div class="ps-item-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="7" stroke="#f87171" stroke-width="1.3"/><path d="M6 6L12 12M12 6L6 12" stroke="#f87171" stroke-width="1.3" stroke-linecap="round"/></svg>
+                </div>
+                <div>
+                  <strong>Manual Night Audit (4–6 hours)</strong>
+                  <p>A dedicated overnight accountant manually posts charges, reconciles tills, and generates reports — an error-prone, expensive operation repeated every single night.</p>
+                </div>
+              </li>
+              <li class="ps-item ps-item--problem">
+                <div class="ps-item-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="7" stroke="#f87171" stroke-width="1.3"/><path d="M6 6L12 12M12 6L6 12" stroke="#f87171" stroke-width="1.3" stroke-linecap="round"/></svg>
+                </div>
+                <div>
+                  <strong>Double-Booking Crises</strong>
+                  <p>OTA platforms updated manually via extranets — slow, inconsistent, and a direct source of overbooking incidents and guest dissatisfaction.</p>
+                </div>
+              </li>
+              <li class="ps-item ps-item--problem">
+                <div class="ps-item-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="7" stroke="#f87171" stroke-width="1.3"/><path d="M6 6L12 12M12 6L6 12" stroke="#f87171" stroke-width="1.3" stroke-linecap="round"/></svg>
+                </div>
+                <div>
+                  <strong>Flat, Intuition-Based Pricing</strong>
+                  <p>Room rates set weekly by a revenue manager using spreadsheets — missing real-time demand signals, losing thousands in potential RevPAR every high-demand day.</p>
+                </div>
+              </li>
+              <li class="ps-item ps-item--problem">
+                <div class="ps-item-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="7" stroke="#f87171" stroke-width="1.3"/><path d="M6 6L12 12M12 6L6 12" stroke="#f87171" stroke-width="1.3" stroke-linecap="round"/></svg>
+                </div>
+                <div>
+                  <strong>Zero Consolidated Reporting</strong>
+                  <p>No single view of occupancy, F&amp;B revenue, payroll cost, and banquet billing. Owners compile management accounts from multiple exports — days after month end.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Arrow / Nexus Bridge -->
+          <div class="ps-bridge" aria-hidden="true">
+            <div class="bridge-line bridge-line--top"></div>
+            <div class="bridge-nexus-badge">
+              <svg width="36" height="36" viewBox="0 0 36 36" fill="none"><rect width="16" height="16" rx="2.5" fill="url(#bg1)"/><rect x="20" width="16" height="16" rx="2.5" fill="url(#bg2)" opacity="0.7"/><rect y="20" width="16" height="16" rx="2.5" fill="url(#bg2)" opacity="0.7"/><rect x="20" y="20" width="16" height="16" rx="2.5" fill="url(#bg1)"/><defs><linearGradient id="bg1" x1="0" y1="0" x2="16" y2="16" gradientUnits="userSpaceOnUse"><stop stop-color="#38bdf8"/><stop offset="1" stop-color="#0ea5e9"/></linearGradient><linearGradient id="bg2" x1="0" y1="0" x2="16" y2="16" gradientUnits="userSpaceOnUse"><stop stop-color="#7dd3fc"/><stop offset="1" stop-color="#38bdf8"/></linearGradient></defs></svg>
+              <span>Nexus</span>
+            </div>
+            <div class="bridge-line bridge-line--bottom"></div>
+          </div>
+
+          <!-- After Column -->
+          <div class="ps-column ps-column--after" aria-labelledby="after-heading">
+            <div class="ps-column-header">
+              <div class="ps-column-badge ps-column-badge--after">Mysoft Neo</div>
+              <h3 class="ps-column-title" id="after-heading">The Unified Cloud Model</h3>
+            </div>
+            <ul class="ps-list" role="list">
+              <li class="ps-item ps-item--solution">
+                <div class="ps-item-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="7" stroke="#34d399" stroke-width="1.3"/><path d="M5.5 9L7.8 11.5L12.5 6.5" stroke="#34d399" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <div>
+                  <strong>Single Multi-Tenant Cloud Platform</strong>
+                  <p>Stay, dining, housekeeping, payroll, and banquet live in one Azure-hosted hub. No local servers, no VPNs, no manual sync — access from any browser, anywhere.</p>
+                </div>
+              </li>
+              <li class="ps-item ps-item--solution">
+                <div class="ps-item-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="7" stroke="#34d399" stroke-width="1.3"/><path d="M5.5 9L7.8 11.5L12.5 6.5" stroke="#34d399" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <div>
+                  <strong>Autonomous Night Audit (~4 minutes)</strong>
+                  <p>The Night Audit Engine runs automatically every night — posting charges, reconciling POS, rolling the date, and emailing reports. Zero staff. Zero errors.</p>
+                </div>
+              </li>
+              <li class="ps-item ps-item--solution">
+                <div class="ps-item-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="7" stroke="#34d399" stroke-width="1.3"/><path d="M5.5 9L7.8 11.5L12.5 6.5" stroke="#34d399" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <div>
+                  <strong>Real-Time OTA Sync — &lt;90 Seconds</strong>
+                  <p>Every booking and cancellation propagates across all OTA channels in under 90 seconds via the dedicated Azure sync micro-service. Double bookings become structurally impossible.</p>
+                </div>
+              </li>
+              <li class="ps-item ps-item--solution">
+                <div class="ps-item-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="7" stroke="#34d399" stroke-width="1.3"/><path d="M5.5 9L7.8 11.5L12.5 6.5" stroke="#34d399" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <div>
+                  <strong>Dynamic Tariff Engine — Always Optimised</strong>
+                  <p>The Automated Revenue Manager continuously monitors occupancy and demand signals, updating rates across all segments and channels within defined guardrails — maximising every night's yield.</p>
+                </div>
+              </li>
+              <li class="ps-item ps-item--solution">
+                <div class="ps-item-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="7" stroke="#34d399" stroke-width="1.3"/><path d="M5.5 9L7.8 11.5L12.5 6.5" stroke="#34d399" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <div>
+                  <strong>Unified Real-Time Dashboard</strong>
+                  <p>Owners and GMs see a live consolidated view of occupancy, RevPAR, F&amp;B revenue, material consumption, payroll cost, and banquet pipeline — updated by the second via Azure SignalR.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== MODULES SECTION ========== -->
+    <section class="section modules" id="modules" aria-labelledby="mod-heading">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-eyebrow">Complete Module Suite</div>
+          <h2 class="section-title" id="mod-heading">Every Department. One Platform.</h2>
+          <p class="section-subtitle">Mysoft Neo covers every operational and financial function of an independent hotel or resort — eliminating the need for any third-party departmental system.</p>
+        </div>
+        <div class="modules-grid">
+          <article class="module-card" aria-labelledby="mod-1">
+            <div class="module-card-number" aria-hidden="true">01</div>
+            <h3 class="module-card-title" id="mod-1">Front Office</h3>
+            <p class="module-card-body">Reservations, check-in/out, room allocation grid, folio management, guest profiles, group bookings, and corporate accounts — all in a single real-time Angular workspace.</p>
+          </article>
+          <article class="module-card" aria-labelledby="mod-2">
+            <div class="module-card-number" aria-hidden="true">02</div>
+            <h3 class="module-card-title" id="mod-2">Housekeeping</h3>
+            <p class="module-card-body">Digital room status boards with real-time push updates. Assign attendants, track cleaning cycles, manage maintenance tickets, and link room readiness directly to front-desk availability.</p>
+          </article>
+          <article class="module-card" aria-labelledby="mod-3">
+            <div class="module-card-number" aria-hidden="true">03</div>
+            <h3 class="module-card-title" id="mod-3">Point of Sale</h3>
+            <p class="module-card-body">High-speed, multi-outlet POS for restaurants, bars, in-room dining, and spa. KOT/BOT printing, table mapping, split billing, and seamless folio posting to guest rooms in one tap.</p>
+          </article>
+          <article class="module-card" aria-labelledby="mod-4">
+            <div class="module-card-number" aria-hidden="true">04</div>
+            <h3 class="module-card-title" id="mod-4">Material Management</h3>
+            <p class="module-card-body">Centralised procurement workflow — purchase requests, LPO generation, GRN, inventory tracking across stores, minimum stock alerts, and supplier ledger management integrated with accounts.</p>
+          </article>
+          <article class="module-card" aria-labelledby="mod-5">
+            <div class="module-card-number" aria-hidden="true">05</div>
+            <h3 class="module-card-title" id="mod-5">Banquet</h3>
+            <p class="module-card-body">Full event lifecycle — function diary, hall allocation, event-wise menu and setup configuration, advance deposit management, and final billing linked directly to the POS and accounts module.</p>
+          </article>
+          <article class="module-card" aria-labelledby="mod-6">
+            <div class="module-card-number" aria-hidden="true">06</div>
+            <h3 class="module-card-title" id="mod-6">Food Costing</h3>
+            <p class="module-card-body">Recipe-level costing with ingredient linkage to the material store. Tracks actual vs standard cost per dish, menu engineering reports, and wastage analysis — protecting F&amp;B margins with precision.</p>
+          </article>
+          <article class="module-card module-card--wide" aria-labelledby="mod-7">
+            <div class="module-card-number" aria-hidden="true">07</div>
+            <h3 class="module-card-title" id="mod-7">Payroll</h3>
+            <p class="module-card-body">Configurable pay structures with statutory compliance (PF, ESI, PT, TDS). Attendance integration, leave management, loan and advance tracking, payslip generation, and bank transfer file export — covering every payroll cycle from computation to disbursement.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== TRUST / COMPLIANCE BAR ========== -->
+    <section class="section trust-section" aria-labelledby="trust-heading">
+      <div class="container">
+        <h2 class="visually-hidden" id="trust-heading">Enterprise Compliance and Security Standards</h2>
+        <div class="trust-grid">
+          <div class="trust-item">
+            <div class="trust-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 3L5 7v7c0 5.25 3.85 10.15 9 11.35C19.15 24.15 23 19.25 23 14V7L14 3Z" stroke="#38bdf8" stroke-width="1.5" stroke-linejoin="round"/><path d="M10 14l2.5 2.5L18 11" stroke="#38bdf8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div class="trust-item-text">
+              <strong>Azure Security Centre</strong>
+              <span>Threat detection, identity protection, and unified security posture management.</span>
+            </div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="5" y="11" width="18" height="13" rx="2" stroke="#38bdf8" stroke-width="1.5"/><path d="M9 11V8a5 5 0 0 1 10 0v3" stroke="#38bdf8" stroke-width="1.5" stroke-linecap="round"/><circle cx="14" cy="17" r="2" fill="#38bdf8"/></svg>
+            </div>
+            <div class="trust-item-text">
+              <strong>End-to-End TLS 1.3</strong>
+              <span>All API and UI traffic encrypted in transit. Azure Key Vault for secrets and certificates.</span>
+            </div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 4C8.477 4 4 8.477 4 14s4.477 10 10 10 10-4.477 10-10S19.523 4 14 4Z" stroke="#38bdf8" stroke-width="1.5"/><path d="M14 8v6l4 2" stroke="#38bdf8" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <div class="trust-item-text">
+              <strong>99.9% SLA Uptime</strong>
+              <span>Azure App Services and Azure SQL backed by Microsoft's enterprise SLA commitments.</span>
+            </div>
+          </div>
+          <div class="trust-item">
+            <div class="trust-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="4" y="4" width="9" height="9" rx="1.5" stroke="#38bdf8" stroke-width="1.5"/><rect x="15" y="4" width="9" height="9" rx="1.5" stroke="#38bdf8" stroke-width="1.5"/><rect x="4" y="15" width="9" height="9" rx="1.5" stroke="#38bdf8" stroke-width="1.5"/><rect x="15" y="15" width="9" height="9" rx="1.5" stroke="#38bdf8" stroke-width="1.5"/></svg>
+            </div>
+            <div class="trust-item-text">
+              <strong>Multi-Tenant Isolation</strong>
+              <span>Tenant-isolated Azure SQL schemas. Zero cross-tenant data leakage by architecture.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer" id="contact" role="contentinfo">
+    <div class="footer-glow" aria-hidden="true"></div>
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo footer-logo" aria-label="Mysoft Neo Home">
+            <div class="logo-mark">
+              <svg width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                <rect width="14" height="14" rx="2" fill="url(#fgrad1)"/>
+                <rect x="18" width="14" height="14" rx="2" fill="url(#fgrad2)" opacity="0.7"/>
+                <rect y="18" width="14" height="14" rx="2" fill="url(#fgrad2)" opacity="0.7"/>
+                <rect x="18" y="18" width="14" height="14" rx="2" fill="url(#fgrad1)"/>
+                <defs>
+                  <linearGradient id="fgrad1" x1="0" y1="0" x2="14" y2="14" gradientUnits="userSpaceOnUse"><stop stop-color="#38bdf8"/><stop offset="1" stop-color="#0ea5e9"/></linearGradient>
+                  <linearGradient id="fgrad2" x1="0" y1="0" x2="14" y2="14" gradientUnits="userSpaceOnUse"><stop stop-color="#7dd3fc"/><stop offset="1" stop-color="#38bdf8"/></linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <span class="logo-text">Mysoft<span class="logo-accent">Nexus</span></span>
+          </a>
+          <p class="footer-tagline">Enterprise Cloud PMS &amp; POS Platform<br/>for Independent Hotels &amp; Resorts</p>
+          <div class="footer-azure-badge" aria-label="Built on Microsoft Azure">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="1" y="1" width="6.5" height="6.5" fill="#f25022"/><rect x="8.5" y="1" width="6.5" height="6.5" fill="#7fba00"/><rect x="1" y="8.5" width="6.5" height="6.5" fill="#00a4ef"/><rect x="8.5" y="8.5" width="6.5" height="6.5" fill="#ffb900"/></svg>
+            Built on Microsoft Azure
+          </div>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <div class="footer-nav-group">
+            <h4 class="footer-nav-heading">Platform</h4>
+            <ul role="list">
+              <li><a href="#modules">Front Office</a></li>
+              <li><a href="#modules">Point of Sale</a></li>
+              <li><a href="#modules">Housekeeping</a></li>
+              <li><a href="#modules">Banquet &amp; Events</a></li>
+              <li><a href="#modules">Payroll</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-group">
+            <h4 class="footer-nav-heading">Automation</h4>
+            <ul role="list">
+              <li><a href="#automation">Night Auditor</a></li>
+              <li><a href="#automation">Revenue Manager</a></li>
+              <li><a href="#automation">OTA Sync Engine</a></li>
+              <li><a href="#architecture">Azure Architecture</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-group">
+            <h4 class="footer-nav-heading">Company</h4>
+            <ul role="list">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Documentation</a></li>
+              <li><a href="mailto:contact@Mysoft Neo.in">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-group">
+            <h4 class="footer-nav-heading">Legal</h4>
+            <ul role="list">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Data Processing Agreement</a></li>
+              <li><a href="#">Security</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-contact">
+          <a href="mailto:contact@Mysoft Neo.in" class="footer-email">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="1" y="3" width="14" height="10" rx="2" stroke="currentColor" stroke-width="1.2"/><path d="M1 5l7 5 7-5" stroke="currentColor" stroke-width="1.2"/></svg>
+            contact@Mysoft Neo.in
+          </a>
+        </div>
+        <p class="footer-copy">&copy; 2026 Mysoft Neo Technologies. All rights reserved.</p>
+        <div class="footer-stack-note">
+          <span class="mono-text">Angular · .NET Core · Azure SQL · Azure App Services</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
